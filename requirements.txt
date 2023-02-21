@@ -1,0 +1,7 @@
+Flask
+Flask-Cors
+Flask-restful
+krbcontext
+pywinrm
+pywinrm[kerberos]
+pywinrm[credssp]

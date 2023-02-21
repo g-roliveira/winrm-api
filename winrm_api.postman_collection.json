@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "5f91f631-094d-43ed-aa72-ce0b11f2cc8e",
+		"name": "winrm_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17178460"
+	},
+	"item": [
+		{
+			"name": "Test-NTLM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"host\": \"ip_domain_services\",\n    \"user\": \"usuario@dominio\",\n    \"password\": \"senha!\",\n    \"transport\": \"ntlm\",\n    \"command\": \"ipconfig /all\"\n}\n"
+				},
+				"url": {
+					"raw": "http://localhost:5000/winrm",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"winrm"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
